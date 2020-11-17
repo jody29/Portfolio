@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customize Playstation | Jody Lorist</title>
+    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+      <nav>
+          <ul class="upper_nav">
+              <li><a href="index.html" class="hide">Portfolio</a></li>
+              <li><a href="about.html" class="hide">About</a></li>
+              <li><a href="">JODY LORIST</a></li>
+              <li><button>&#9776;</button></li>
+              <li><a href="contact.html" class="hide">Contact</a></li>
+                 
+          </ul>
+          <div>
+              <ul>
+                  <li><a href="index.html">Portfolio</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      
+      
+  </header>
+  
+  <main id="travelApp">
+     <section>
+      <img src="playstation_mockup.png" alt="">
+      <div>
+      <h1>Customize Playstation</h1>
+      <h2>Opdrachtgever: eigen project</h2>
+      <h2>Focus: Frontend Development (JavaScript)</h2>  
+        <h2>Datum: 25-05-2020</h2>  
+         </div>
+      
+     </section>
+     
+     <article>
+            <h2>Over dit project</h2>
+            <p>Bij dit project was het de bedoeling om een site te bouwen met HTML, CSS en JavaScript. De  focus lag hier vooral op het javascript gedeelte. Ik heb een website gemaakt waar de gebruiker zijn eigen Playstation 4 console kan customizen, aan zijn winkelwagen kan toevoegen en vervolgens ook op afrekenen kan klikken. Wanneer de gebruiker op afrekenen klikt krijgt een een melding waarin hij/zij wordt bedankt voor de betaling en kan vervolgens op het kruisje klikken om terug te gaan naar de default versie van de playstation.</p>
+            <p>Dit project was voor het vak Inleiding Programmeren. Dit vak had ik in het eerste jaar van CMD. Ik heb deze opdracht vervroegd mogen afronden, omdat ik heel erg vooruit liep met alles. Ik heb voor dit project dan ook een 9 gekregen. Dit cijfer is gebasseerd op mijn toepassing van JavaScript.</p>
+        </article>
+        
+      <section><a href="https://oege.ie.hva.nl/~loristj/JodyLorist_Staal_Olifant/" target="_blank">Bekijk live site</a></section>
+       
+    
+       <article>
+         
+          <figure>
+           <img src="Schermafbeelding%202020-11-17%20om%2001.28.44.png" alt="">
+           <figcaption>Hier is te zien hoe ik ervoor heb gezorgd dat je de kleuren kan kiezen van de Playstation. Ik heb dit gedaan doormiddel van een switch statement. De switch statement kijkt naar wat het variabele 'keuze' is. Dit variabele wordt gedefinieerd door een event.target.id. Hij kijkt dus op welk id er wordt geklikt.</figcaption>
+           </figure>
+           <figure>
+           <img src="Schermafbeelding%202020-11-17%20om%2001.29.39.png" alt="">
+           <figcaption>Hier zijn mijn event listeners te zien. De colorbuttons die te op de site te zien zijn heb ik in een nodelist gezet. Deze nodelist heet colorButtons. Wanneer ik wil dat een function op een nodelist gaat werken, gebruik een arrow function. Hierdoor kunnen alle elementen die in de nodelist zitten deze functie oproepen.</figcaption>
+           </figure>
+           <figure>
+           <img src="Schermafbeelding%202020-11-17%20om%2001.30.28.png" alt="">
+           <figcaption>Hier is een klein overzichtje te zien met hoe ik te werk ga. Bovenin zijn een aantal default waarden te zien. Daarna zijn de functies te zien die het winkelwagentje openen en sluiten. Ook zijn de functies die ervoor zorgen dat je iets kan toevoegen en verwijderen te zien. Voor de emptyCart event heb ik een for loop gebruikt om ervoor te zorgen dat de geselecteerde kleur verwijderd.</figcaption>
+           </figure>
+           
+       </article>
+        
+        
+  </main>
+  
+      <footer>
+       <section>
+           <p>Copyright &copy; <strong>Jody Lorist</strong> <span class="date"></span></p>
+        </section>
+        
+        <section>
+            <ul>
+                <li><a href="https://www.instagram.com/_jody_020_/" target="_blank"><img src="IG_Logo.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/jody-lorist-5262b2164" target="_blank"><img src="Linkedin_logo.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJh7ktkLsCgYJ6Iurxh8kog?view_as=subscriber" target="_blank"><img src="YT_LOGO.png" alt=""></a></li>
+            </ul>
+        </section>
+        
+        
+       
+        
+    </footer>
+   
+    
+</body>
+<script>
+    
+    var menuButton = document.querySelector("header nav ul li button");
+    var dropdownMenu = document.querySelector("header nav div");
+    const date = document.querySelector(".date");
+    
+    date.textContent = new Date().getFullYear();
+    
+    function dropDown() {
+        dropdownMenu.classList.toggle('dropDown');
+    }
+    
+    menuButton.addEventListener('click', dropDown);
+
+</script>
+</html>

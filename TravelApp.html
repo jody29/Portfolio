@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football Travel | Jody Lorist</title>
+    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+      <nav>
+          <ul class="upper_nav">
+              <li><a href="index.html" class="hide">Portfolio</a></li>
+              <li><a href="about.html" class="hide">About</a></li>
+              <li><a href="">JODY LORIST</a></li>
+              <li><button>&#9776;</button></li>
+              <li><a href="contact.html" class="hide">Contact</a></li>
+                 
+          </ul>
+          <div>
+              <ul>
+                  <li><a href="index.html">Portfolio</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      
+      
+  </header>
+  
+  <main id="travelApp">
+     <section>
+      <img src="travelApp_noBG.png" alt="">
+      <div>
+      <h1>Football Travel</h1>
+      <h2>Opdrachtgever: eigen project</h2>
+      <h2>Focus: UX design</h2>  
+        <h2>Datum: 29-10-2020</h2>  
+         </div>
+      
+     </section>
+     
+     <article>
+            <h2>Over dit project</h2>
+            <p>Football Travel is een app die gericht is voor voetbal supporters die hun favoriete voetbal club overal in Europa volgen. Sommige van deze fanatieke voetbalsupporters willen tijdens hun reis naar het buitenland niet alleen maar op een plein hangen en niks van de stad zien. Daarom heb ik een app gemaakt waar deze fanatieke voetbalsupporter allemaal activiteiten en bezienswaardigheden in de stad waar hij heen gaat kan vinden.</p>
+            <p>De gebruiker krijgt in de app een lijst met activiteiten te zien die hij kan bezoeken. Dit zijn allemaal activiteiten die hij kan bezoeken en zijn dus bijvoorbeeld niet alleen te bezoeken tijdens de wedstrijd die hij gaat bezoeken. Vervolgens zal de app een planning voor hem maken met routeplanner. Zo hoeft de gebruiker tijdens de reis niks meer te doen.</p>
+        </article>
+        
+      <section><a href="https://xd.adobe.com/view/d6a413a5-250b-41bb-aff3-39bea9b31f48-83f7/" target="_blank">Bekijk Prototype</a><a href="https://www.notion.so/UX-design-Traveling-Web-app-03e80d41b2084fcaac8f01e95ef18622" target="_blank">Bekijk Design Rationale</a></section>
+        
+        
+  </main>
+  
+      <footer>
+       <section>
+           <p>Copyright &copy; <strong>Jody Lorist</strong> <span class="date"></span></p>
+        </section>
+        
+        <section>
+            <ul>
+                <li><a href="https://www.instagram.com/_jody_020_/" target="_blank"><img src="IG_Logo.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/jody-lorist-5262b2164" target="_blank"><img src="Linkedin_logo.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJh7ktkLsCgYJ6Iurxh8kog?view_as=subscriber" target="_blank"><img src="YT_LOGO.png" alt=""></a></li>
+            </ul>
+        </section>
+        
+        
+       
+        
+    </footer>
+   
+    
+</body>
+<script>
+    
+    var menuButton = document.querySelector("header nav ul li button");
+    var dropdownMenu = document.querySelector("header nav div");
+    const date = document.querySelector(".date");
+    
+    date.textContent = new Date().getFullYear();
+    
+    function dropDown() {
+        dropdownMenu.classList.toggle('dropDown');
+    }
+    
+    menuButton.addEventListener('click', dropDown);
+
+</script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customize Playstation | Jody Lorist</title>
+    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+      <nav>
+          <ul class="upper_nav">
+              <li><a href="index.html" class="hide">Portfolio</a></li>
+              <li><a href="about.html" class="hide">About</a></li>
+              <li><a href="">JODY LORIST</a></li>
+              <li><button>&#9776;</button></li>
+              <li><a href="contact.html" class="hide">Contact</a></li>
+                 
+          </ul>
+          <div>
+              <ul>
+                  <li><a href="index.html">Portfolio</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      
+      
+  </header>
+  
+  <main id="travelApp">
+     <section>
+      <img src="Ajax_Mockup_1.png" alt="">
+      <div>
+      <h1>Website AFC Ajax</h1>
+      <h2>Opdrachtgever: eigen project</h2>
+      <h2>Focus: Frontend Development (Responsive &amp; Surface)</h2>  
+        <h2>Datum: 18-10-2020</h2>  
+         </div>
+      
+     </section>
+     
+     <article>
+            <h2>Over dit project</h2>
+            <p>Voor het vak Frontend Development was het de bedoeling dat we een site naar keuze gingen nabouwen doormiddel van HTML, CSS en JavaScript. Ik heb ervoor gekozen om de <a href="https://www.ajax.nl/">website van AFC Ajax</a> na te bouwen. We mochten zelf kiezen of we de focus gingen leggen op responsivenes of de surface laag. Ik heb ervoor gekozen om voor beide te gaan. Dit is omdat ik mijzelf graag wilde uitdagen met coderen. </p>
+            <p>Ik ben begonnen om de website eerst voor mobiel goed werkend te maken, daarna ben ik pas gaan kijken hoe ik de website responsive ben gaan maken. Uiteraard heb ik bij het coderen wel eraan gedacht om zoveel mogelijk css te gebruiken die uiteindelijk ervoor zorgen dat het responsive maken veel makkelijker gaat worden. Voor deze opdracht heb ik als eindcijfer een 8 gekregen.</p>
+        </article>
+        
+      <section><a href="https://jody29.github.io/Frontend-Development/" target="_blank">Bekijk live site</a>
+      <a href="https://github.com/jody29/Frontend-Development" target="_blank">Bekijk GitHub Repository</a>
+      </section>
+       
+    
+  
+        
+        
+  </main>
+  
+      <footer>
+       <section>
+           <p>Copyright &copy; <strong>Jody Lorist</strong> <span class="date"></span></p>
+        </section>
+        
+        <section>
+            <ul>
+                <li><a href="https://www.instagram.com/_jody_020_/" target="_blank"><img src="IG_Logo.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/jody-lorist-5262b2164" target="_blank"><img src="Linkedin_logo.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJh7ktkLsCgYJ6Iurxh8kog?view_as=subscriber" target="_blank"><img src="YT_LOGO.png" alt=""></a></li>
+            </ul>
+        </section>
+        
+        
+       
+        
+    </footer>
+   
+    
+</body>
+<script>
+    
+    var menuButton = document.querySelector("header nav ul li button");
+    var dropdownMenu = document.querySelector("header nav div");
+    const date = document.querySelector(".date");
+    
+    date.textContent = new Date().getFullYear();
+    
+    function dropDown() {
+        dropdownMenu.classList.toggle('dropDown');
+    }
+    
+    menuButton.addEventListener('click', dropDown);
+
+</script>
+</html>

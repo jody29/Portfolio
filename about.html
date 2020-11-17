@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Jody Lorist</title>
+    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body id="aboutbody">
+  
+  <header>
+      <nav>
+          <ul>
+              <li><a href="index.html" class="hide">Portfolio</a></li>
+              <li><a href="about.html" class="current">About</a></li>
+              <li><a href="">JODY LORIST</a></li>
+              <li><button>	&#9776;</button></li>
+              <li><a href="contact.html" class="hide">Contact</a></li>   
+          </ul>
+          <div>
+              <ul>
+                  <li><a href="index.html" class="current_mobile">Portfolio</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      
+      
+  </header>
+  
+  <main id="aboutPage">
+     
+    <article>
+        <img src="foto_jody.png" alt="">
+        <section>
+            <h1>Wie ben ik?</h1>
+            <p>Mijn naam is Jody Lorist en ik ben een <strong>UX/UI designer en Frontend Developer</strong>.</p>
+            <p>Ik zou mij zelf omschrijven als een heel erg <strong>onderzoekend en empatisch</strong> persoon. Ik probeer altijd wel alles tot de bodem uit te zoeken. Deze eigenschappen helpen mij enorm voor zowel UX/UI design als frontend development.</p>
+            <p>Ik kan erg goed samenwerken in een multi-disciplinair team, maar zelfstandig aan een project werken is voor mij ook geen probleem. Zelf heb ik eigenlijk geen voorkeur.</p>
+            <p>Zelf kan ik altijd wel heel erg gefocused aan een project werken, maar natuurlijk ben ik altijd wel in voor gezelligheid op de werkvloer.</p>
+            <p>Ben je nou benieuwd geworden naar mij? <strong><a href="contact.html">Neem dan vooral contact met mij op!</a></strong></p>
+        
+            
+        </section>
+    </article> 
+     
+     <h2>Vaardigheden</h2>
+     <article>
+        <section>
+            <h3>Frontend Development</h3>
+            <p>Hierin heb ik mij het meeste ontwikkeld tijdens mijn eerste 2 jaar op CMD. Voordat ik op CMD kwam had ik eigenlijk helemaal geen ervaring met ook maar een codeertaal, maar ik pakte het eigenlijk heel snel op. Ik ben nu erg ervaren met HTML, CSS en JavaScript. Ik heb een basis kennis van backend talen zoals PHP en MySQL. Ik leer uiteraard nog elke dag. Zo ben ik  bijna iedere dag wel bezig met cursussen volgen op Codecademy. </p>
+        </section>
+        <section>
+            <h3>UX/UI Design</h3>
+            <p>Dit is toch wel een vaardigheid van mij die ik later pas ben gaan ontdekken. Dit is vooral door feedback van docenten. Ik ben namelijk erg goed in empatisch denken en ben erg goed in onderzoek doen naar verschillende User Interface Stijlen. Hierdoor kan ik heel goed uitkomen op een user ervaring die goed werkt voor de doelgroepen en zo zal het interface er altijd erg goed uitzien!.</p>
+        </section>
+        <section>
+            <h3>Adobe CC en andere design software</h3>
+            <p>Door mijn voorgaande MBO opleiding 'Media Design', had ik al een hele hoop ervaring met de Adobe CC software. Ik beheerste software zoals Illustrator, Photoshop, Premiere Pro en After Effects al erg goed. Bij CMD is Adobe XD er voor mij bijgekomen. Ook heb ik voor een project gewerkt met sketch. Hier ben ik ook al aardig bekend mee geworden.</p>
+        </section>
+        <section>
+            <h3>Video editing</h3>
+            <p>Ik heb door de opleiding 'Media Design' en diverse stages (Video-redacteur bij XGN en Stagiare-video bij IJburgTV) erg veel ervaring opgedaan met video editing. Dit doe ik vooral in programma's zoals Premiere Pro en Final Cut Pro. Ook kan ik erg goed omgaan met camera's en heb ik aardig wat affiniteit met filmen en fotograferen.</p>
+        </section>
+     </article>
+      
+  </main>
+  
+      <footer>
+       <section>
+           <p>Copyright &copy; <strong>Jody Lorist</strong> <span class="date"></span></p>
+          </section>
+        
+        <section>
+            <ul>
+                <li><a href="https://www.instagram.com/_jody_020_/" target="_blank"><img src="IG_Logo.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/jody-lorist-5262b2164" target="_blank"><img src="Linkedin_logo.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJh7ktkLsCgYJ6Iurxh8kog?view_as=subscriber" target="_blank"><img src="YT_LOGO.png" alt=""></a></li>
+            </ul>
+        </section>
+       
+        
+    </footer>
+  
+  
+   
+   
+    
+</body>
+
+<script>
+    
+    var menuButton = document.querySelector("header nav ul li button");
+    var dropdownMenu = document.querySelector("header nav div");
+    const date = document.querySelector(".date");
+    
+    date.textContent = new Date().getFullYear();
+    
+    function dropDown() {
+        dropdownMenu.classList.toggle('dropDown');
+    }
+    
+    menuButton.addEventListener('click', dropDown);
+
+</script>
+
+</html>

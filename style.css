@@ -1,0 +1,835 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white; 
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+    z-index: 100;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    align-items: center;
+    margin: 2em 2em;
+    min-width: 1375px;
+    padding: 0;   
+}
+
+@media only screen and (max-width: 1375px) {
+    header {
+        display: block;
+    }
+    
+    header nav ul {
+        
+        justify-content: center;
+        min-width: 0;
+    }
+    
+    main {
+        width: 100%;
+    }
+    
+    #portfolio {
+        grid-template-columns: 2fr;
+        padding: 0 1em;
+    }
+    
+    #aboutPage {
+        margin: 9em 1em;
+        width: 100%;
+    }
+    
+    footer {
+        max-width: 100%;
+        padding: 0 2em;
+        
+    }
+    
+    
+
+
+}
+
+#aboutbody {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+header nav ul a {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 1em;
+    color: black;
+    font-family: 'Righteous', cursive;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li:nth-of-type(4) {
+    margin-left: auto;
+}
+
+header nav ul li:last-of-type a {
+    border-radius: 5em;
+    padding: .5em 1em;
+    background-color: cadetblue;
+    color: white;
+    box-shadow: 0;
+    transition: 300ms;
+}
+
+header nav ul li:last-of-type a:hover {
+    box-shadow: 2px 2px 3px black;
+}
+
+header nav ul li:nth-of-type(2) {
+    margin-right: auto;
+}
+
+
+
+header nav ul li:nth-of-type(3) a {
+    font-size: 2em;
+    padding: 0;
+    color: cadetblue;
+    letter-spacing: 1em;      
+}
+
+.current {
+    border-bottom: 2px solid cadetblue;
+    display: block;
+}
+
+.hide {
+    display: block;
+}
+
+/*Hamburger Menu*/
+header nav div {
+    display: none;
+}
+
+ header nav ul li:nth-of-type(4) button {
+        display: none;
+        
+    }
+
+
+
+/*Main*/
+main {
+    margin: 9em 0 3em;
+}
+
+/*Portfolio Pagina*/
+
+#portfolio {
+    display: grid;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1375px;
+    grid-gap: 1em;
+    grid-template-columns: 2fr 2fr;
+}
+
+
+#portfolio article {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 90%;
+    border-radius: 0 2em;
+    overflow: hidden;
+}
+
+#portfolio article img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 300ms;
+    border-radius: 0 2em;
+    object-position: 100% 0%;
+}
+
+#portfolio article h2 {
+    opacity: 0;
+    position: absolute;
+    bottom: 0em;
+    transition: 300ms;
+    margin: 0;
+    padding: 1em;
+    height: 0;
+    font-size: 0;
+    font-family: 'Righteous', cursive; 
+    border-radius: 0 0 0 1em;
+}
+
+#portfolio article:hover h2 {
+    opacity: 100%;
+    color: white;
+    height: 30%;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    font-size: 2em;
+    background-image: linear-gradient(0deg, black, transparent 100%);
+}
+
+#portfolio article:hover {
+    cursor: pointer;
+}
+
+#portfolio article:hover img {
+    transform: scale(1.1);
+}
+
+/*About pagina*/
+#aboutPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1375px;
+}
+
+#aboutPage article {
+    border-radius: 0 2em;
+    margin: 0 2em;
+    background-color: cadetblue;
+    box-shadow: 5px 5px 20px black;
+    display: flex;
+    height: fit-content;
+    
+}
+
+#aboutPage article section {
+    padding: 0 2em;
+}
+
+#aboutPage article section h1 {
+    color: white;
+    font-family: 'righteous';
+    font-size: 1.5em;
+}
+
+#aboutPage article img {
+    width: 40%;
+    border-radius: 0 0 0 2em;
+    object-fit: cover;
+}
+
+#aboutPage article section p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+#aboutPage article section p a {
+    color: white;
+}
+
+#aboutPage article:nth-of-type(2) {
+    background-color: transparent;
+    box-shadow: none;
+    margin: 4em 0;
+    height: fit-content;
+    align-items: center;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 2fr 2fr;
+    width: 100%;
+}
+
+#aboutPage h2 {
+    font-family: 'righteous';
+    margin-top: 3em;
+    margin-bottom: -2em
+}
+
+#aboutPage article:nth-of-type(2) section {
+    background-color: cadetblue;
+    transform: translateY(0);
+    border-radius: 0 2em;
+    height: 13em
+}
+
+#aboutPage article:nth-of-type(2) section h3 {
+    font-family: 'Righteous';
+    color: white;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+/*Contact*/
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#contact h1 {
+    font-family: 'Righteous', cursive;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+#contact article {
+    border-radius: 0;
+    margin: 2em;
+    width: 100%;
+}
+
+
+
+#contact article ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 2em 2em;
+    
+}
+
+#contact article ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em 2em;
+    background-color: cadetblue;
+    color: white;
+    font-family: sans-serif;
+    transform: scale(1);
+    transition: 300ms;
+    text-decoration: none;
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px black;
+}
+
+#contact article ul li a:hover {
+    transform: scale(1.1);
+}
+
+#contact article ul li:first-of-type a {
+    margin-right: 4em;
+    width: 12em;
+}
+
+#contact article ul li p {
+    margin: 0;
+}
+
+#contact article ul li h3 {
+    margin: 0 0 1em 0;
+}
+
+/*Contact Formulier*/
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+    background-color: cadetblue;
+    padding: 1em;
+    border-radius: 1em;
+   
+}
+
+label {
+    font-size: 1.3em;
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+
+input {
+    padding: 1em;
+    font-size: .9em;
+    border: 0;
+    margin: .5em 0;
+    border-radius: .5em;
+    font-family: 'Righteous', cursive;
+    -webkit-appearance: none;
+}
+
+form input:last-of-type {
+    width: fit-content;
+    background-color: white;
+    color: cadetblue;
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    margin-left: auto;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+form input:last-of-type:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    border-radius: .5em;
+    border: 2px solid cadetblue;
+    font-family: 'Righteous', cursive;
+    font-size: .9em;
+    padding: 1em;
+    margin-top: .5em;
+    font-weight: lighter
+}
+
+textarea:focus {
+    outline: none;
+}
+
+::placeholder {
+    opacity: 50%;
+    font-weight: lighter
+}
+
+/*Insert Pagina*/
+#insertPage h1 {
+    color: cadetblue;
+    font-family: 'righteous', cursive;
+    
+}
+
+/*TravelApp Pagina*/
+
+#travelApp {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 9em 0;
+}
+
+#travelApp section {
+    background-color: cadetblue;
+    width: 100%;
+    padding: 4em;
+    height: 20em;
+    padding: 1em;
+    margin: -1.6em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#travelApp iframe {
+    width: 15em;
+    height: 32em;
+    box-shadow: 10px 10px 10px gray;
+    margin-top: 1em;
+    
+}
+
+#travelApp section img {
+    width: 30%;
+    margin: 2em 5em;
+    transform: translateY(8em)
+}
+
+#travelApp section div {
+    transform: translateY(10em)
+}
+
+#travelApp section h1 {
+    font-size: 4em;
+    margin-bottom: 0em;
+    color: white;
+    font-family: 'righteous';
+}
+
+#travelApp section div h2 {
+    color: cadetblue;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#travelApp article:first-of-type {
+    margin-top: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#travelApp article:first-of-type p {
+    text-align: center;
+    font-family: sans-serif;
+    max-width: 70%;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+#travelApp article:first-of-type p:nth-of-type(2) {
+    margin-top: .5em;
+}
+
+#travelApp article:first-of-type h2 {
+    font-family: 'Righteous';
+    font-weight: lighter;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 0;
+    color: cadetblue;
+}
+
+#travelApp section:nth-of-type(2) {
+    background: none;
+    transform: translateY(0);
+    margin: 2em;
+    padding: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#travelApp section:nth-of-type(2) a {
+    padding: 2em;
+    margin: 0 2em;
+    background-color: cadetblue;
+    text-decoration: none;
+    font-family: 'Righteous';
+    color: white;
+    font-size: 1.2em;
+    border-radius: 1em;
+    transition: 1s;
+    content: none;
+}
+
+#travelApp section:nth-of-type(n) a::after {
+    transition: 300ms;
+    padding: 0;
+    content: none;
+}
+
+#travelApp section:nth-of-type(2) a:hover::after {
+    content: "\021FE";
+    margin-left: .5em;
+}
+
+#travelApp article:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#travelApp article:nth-of-type(2) figure {
+    width: 40%;
+    margin: 3em;
+}
+
+#travelApp article:nth-of-type(2) figure img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#travelApp article:nth-of-type(2) figure figcaption {
+    font-family: sans-serif;
+    margin-top: .5em;
+}
+
+
+
+/*Footer*/
+
+footer {
+    width: 1375px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+footer p {
+    font-family: sans-serif;
+}
+
+footer section ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+footer section ul li + li {
+    margin-left: 1em;
+}
+ 
+
+footer section ul li a img {
+    width: 2.5em;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    
+    
+/*Classes mobile*/
+    .hide {
+        display: none;
+    }
+    
+    .current {
+        display: none;
+    }
+    
+/*Header Mobile*/
+    
+    
+    header {
+        width: 100%;
+    }
+    
+    header nav {
+        width: 100%;
+    }
+    
+    header nav ul {
+        margin: 1.5em;
+    }
+    
+    header nav ul li:nth-of-type(3) a {
+        font-size: 1.5em;
+        margin-left: 0;
+    }
+    
+/*Hamburger Menu Mobile*/
+    header nav div {
+        position: fixed;
+        display: none;
+        background-color: white;
+        height: fit-content;
+        transition: 300ms;
+        width: 100%;
+        border-top: 1px solid black;
+        align-items: flex-start;
+        box-shadow: 0px 5px 10px black;
+    }
+    
+    upper_nav {
+        z-index: 200;
+
+    }
+    
+    .dropDown {
+        display: flex;
+    }
+    
+    header nav ul li:nth-of-type(4) button {
+        font-size: 2em;
+        outline: none;
+        border: 0;
+        background: none;
+        color: cadetblue;
+        display: block;
+        
+    }
+    
+    header nav div ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    header nav div ul li {
+        margin: 1em 0;
+    }
+    
+    header nav div ul li:nth-of-type(2) {
+        margin-right: 0;
+    }
+    
+    header nav div ul li a {
+        padding: 2em 0;
+        
+    }
+    
+    header nav div ul li:last-of-type a {
+        width: fit-content;
+        color: white;
+        letter-spacing: 0;
+        padding: .3em .5em;
+        font-size: 1em;
+        
+    }
+    
+    
+/*Main Mobile*/
+    main {
+        margin: 5em 0;
+        width: 100%;
+    }
+    
+/*Portfolio Mobile*/
+    #portfolio {
+        grid-template-columns: 2fr;
+        padding: 4em 1em;
+    }
+    
+/*About Mobile*/
+    #aboutPage {
+        margin: 8.5em 0;
+    }
+    
+    #aboutPage article {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    
+    #aboutPage article img {
+        width: 100%;
+        border-radius: 0 1em 0 0;
+    }
+    
+    #aboutPage article:nth-of-type(2) {
+    background-color: transparent;
+    box-shadow: none;
+    margin: 2em 0;
+    height: fit-content;
+    align-items: center;
+}
+
+#aboutPage article:nth-of-type(2) ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+}
+
+#aboutPage article:nth-of-type(2) ul li {
+    flex-basis: 40%;
+    height: fit-content;
+    box-shadow: 5px 5px 10px black;
+    padding: 1em;
+    align-items: center;
+    display: flex;
+    background: white;
+    justify-content: center;
+    border-radius: 0 1em;
+}
+    
+    #aboutPage h2 {
+        margin-top: 2em;
+        margin-bottom: -1em
+    }
+
+
+
+#aboutPage article:nth-of-type(2) img {
+    width: 60%;
+    border-radius: 0;
+    
+}
+    
+    
+     
+
+
+@media only screen and (max-width: 530px) {
+    
+    /*Contact Pagina Mobiel*/
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    
+    #contact article {
+        border-right: 0;
+        width: 100%;
+        padding: 0;
+    }
+    
+    
+    
+    #contact article ul {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #contact article ul li a {
+        margin: 0;
+        width: 100%;
+        background-color: cadetblue;
+        color: white;
+        box-shadow: 5px 5px 10px black;
+    }
+    
+    #contact article ul li:first-of-type a {
+        width: 100%;
+        margin: 1em 0;
+    }
+    
+    #contact article ul li {
+        transition: none;
+    }
+    
+    #contact article ul li:hover {
+        transform: scale(1);
+    }
+    
+    
+    
+    form {
+        width: 100%;
+        margin: 0;
+    }
+    
+    
+}
+    
+}
+
+
+
+

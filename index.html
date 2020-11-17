@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Jody Lorist</title>
+    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio van CMD-student Jody Lorist">
+    <meta name="keywords" content="Portfolio, UX/UI Design, CMD Portfolio, Jody, Lorist, Jody Lorist, Frontend Developer, Frontend Development, CMD, cmd, jody lorist, User experience designer, User interface designer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <meta name="google-site-verification" content="0MmWi0bTc1UNLaBF2qSx4Ulo5LTpsDDiiEJ3-cqUDxw" />
+</head>
+<body id="portfolio2">
+  
+  <header>
+      <nav>
+          <ul class="upper_nav">
+              <li><a href="index.html" class="current">Portfolio</a></li>
+              <li><a href="about.html" class="hide">About</a></li>
+              <li><a href="">JODY LORIST</a></li>
+              <li><button>&#9776;</button></li>
+              <li><a href="contact.html" class="hide">Contact</a></li>
+                 
+          </ul>
+          <div>
+              <ul>
+                  <li><a href="index.html" class="current_mobile">Portfolio</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      
+      
+  </header>
+  
+  <main id="portfolio">
+      
+      <article>
+         <a href="TravelApp.html">
+          <img src="TravelApp_Thumbnail.png" alt="">
+          <h2>Football Travel</h2>
+          </a>
+      </article>
+      
+      <article>
+         <a href="Ajax.html">
+          <img src="Ajax_Thumbnail.png" alt="">
+          <h2>Website AFC Ajax</h2>
+          </a>
+      </article>
+      
+      <article>
+         <a href="Playstation.html">
+          <img src="Playstation_Thumbnal_1.png" alt="">
+          <h2>Customize Playstation</h2>
+          </a>
+      </article>
+      
+      <article>
+         <a href="NorthFace.html">
+          <img src="NortFace_Thumbnail.png" alt="">
+          <h2>Customize high-tech backpack</h2>
+          </a>
+      </article>
+      
+  </main>
+    
+    <footer>
+       <section>
+           <p>Copyright &copy; <strong>Jody Lorist</strong> <span class="date"></span></p>
+        </section>
+        
+        <section>
+            <ul>
+                <li><a href="https://www.instagram.com/_jody_020_/" target="_blank"><img src="IG_Logo.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/jody-lorist-5262b2164" target="_blank"><img src="Linkedin_logo.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJh7ktkLsCgYJ6Iurxh8kog?view_as=subscriber" target="_blank"><img src="YT_LOGO.png" alt=""></a></li>
+            </ul>
+        </section>
+       
+        
+    </footer>
+     
+</body>
+
+<script>
+    
+    var menuButton = document.querySelector("header nav ul li button");
+    var dropdownMenu = document.querySelector("header nav div");
+    const date = document.querySelector(".date");
+    
+    date.textContent = new Date().getFullYear();
+    
+    function dropDown() {
+        dropdownMenu.classList.toggle('dropDown');
+    }
+    
+    menuButton.addEventListener('click', dropDown);
+
+</script>
+
+</html>

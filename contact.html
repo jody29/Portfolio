@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Jody Lorist</title>
+    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <header>
+      <nav>
+          <ul>
+              <li><a href="index.html" class="hide">Portfolio</a></li>
+              <li><a href="about.html" class="hide">About </a></li>
+              <li><a href="">JODY LORIST</a></li>
+              <li><button>&#9776;</button></li>
+              <li><a href="contact.html" class="hide">Contact</a></li>   
+          </ul>
+          <div>
+              <ul>
+                  <li><a href="index.html" class="current_mobile">Portfolio</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      
+      
+  </header>
+  
+  <main id="contact">
+     
+     <article>
+         <h1>Neem gerust contact met mij op!</h1>
+         <ul>
+             <li><a href="tel:+31646717792"><h3>Telefoon</h3><p>+31 646717792</p></a></li>
+             <li><a href="mailto:jodylorist@hotmail.com"><h3>Mail</h3><p>jodylorist@hotmail.com</p></a></li>
+         </ul>
+         
+     </article>
+     
+     
+    
+      <form method="post" action="insert.php">
+          
+          <label for="">Naam:</label>
+          <input type="text" name="name" placeholder="Jody Lorist" required>
+          
+          <label for="">E-mail:</label>
+          <input type="text" name="email" placeholder="jodylorist@hotmail.com" required>
+          
+          <label for="">Bericht:</label>
+          <textarea name="message" id="" cols="30" rows="8" placeholder="Typ hier uw bericht..." required></textarea>
+          
+          <input type="submit">
+          
+          
+      </form>
+      
+  </main>
+  
+      <footer>
+       <section>
+           <p>Copyright &copy; <strong>Jody Lorist</strong> <span class="date"></span></p>
+        </section>
+        
+        <section>
+            <ul>
+                <li><a href="https://www.instagram.com/_jody_020_/" target="_blank"><img src="IG_Logo.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/jody-lorist-5262b2164" target="_blank"><img src="Linkedin_logo.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJh7ktkLsCgYJ6Iurxh8kog?view_as=subscriber" target="_blank"><img src="YT_LOGO.png" alt=""></a></li>
+            </ul>
+        </section>
+       
+        
+    </footer>
+   
+    
+</body>
+
+<script>
+    
+    var menuButton = document.querySelector("header nav ul li button");
+    var dropdownMenu = document.querySelector("header nav div");
+    const date = document.querySelector(".date");
+    
+    date.textContent = new Date().getFullYear();
+    
+    function dropDown() {
+        dropdownMenu.classList.toggle('dropDown');
+    }
+    
+    menuButton.addEventListener('click', dropDown);
+
+</script>
+
+</html>

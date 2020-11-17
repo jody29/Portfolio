@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customize high-tech backpack | Jody Lorist</title>
+    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+      <nav>
+          <ul class="upper_nav">
+              <li><a href="index.html" class="hide">Portfolio</a></li>
+              <li><a href="about.html" class="hide">About</a></li>
+              <li><a href="">JODY LORIST</a></li>
+              <li><button>&#9776;</button></li>
+              <li><a href="contact.html" class="hide">Contact</a></li>
+                 
+          </ul>
+          <div>
+              <ul>
+                  <li><a href="index.html">Portfolio</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      
+      
+  </header>
+  
+  <main id="travelApp">
+     <section>
+      <img src="NorthFace_Mockup.png" alt="">
+      <div>
+      <h1>Customize high-tech backpack</h1>
+      <h2>Opdrachtgever: eigen project</h2>
+      <h2>Focus: User Interface Design</h2>  
+        <h2>Datum: 10-01-2020</h2>  
+         </div>
+      
+     </section>
+     
+     <article>
+            <h2>Over dit project</h2>
+            <p>Voor het vak Human Computer Interaction was het de bedoeling dat we een actie website gingen maken voor een customizable high tech back pack van The North Face. Het was de bedoeling dat we de principes die we tijdens de course hadden geleerd, gingen toepassen in ons design. Ook had het ontwerp een aantal requirements waaraan het moest voldoen.</p>
+            <p>Ik heb voor deze opdracht een 8.5 gekregen.</p>
+        </article>
+        
+      <section><a href="HCI_Ontwerp_Jody.pdf" target="_blank">Bekijk ontwerp PDF</a>
+      </section>
+       
+    
+  
+        
+        
+  </main>
+  
+      <footer>
+       <section>
+           <p>Copyright &copy; <strong>Jody Lorist</strong> <span class="date"></span></p>
+        </section>
+        
+        <section>
+            <ul>
+                <li><a href="https://www.instagram.com/_jody_020_/" target="_blank"><img src="IG_Logo.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/jody-lorist-5262b2164" target="_blank"><img src="Linkedin_logo.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJh7ktkLsCgYJ6Iurxh8kog?view_as=subscriber" target="_blank"><img src="YT_LOGO.png" alt=""></a></li>
+            </ul>
+        </section>
+        
+        
+       
+        
+    </footer>
+   
+    
+</body>
+<script>
+    
+    var menuButton = document.querySelector("header nav ul li button");
+    var dropdownMenu = document.querySelector("header nav div");
+    const date = document.querySelector(".date");
+    
+    date.textContent = new Date().getFullYear();
+    
+    function dropDown() {
+        dropdownMenu.classList.toggle('dropDown');
+    }
+    
+    menuButton.addEventListener('click', dropDown);
+
+</script>
+</html>
