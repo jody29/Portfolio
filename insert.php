@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli("localhost", "jodylorist_nl_jodylorist", "bbhrKLMbuim3", "jodylorist_nl_jodylorist");
+$mysqli = new mysqli("localhost", "jodylorist_nl_jodylorist", "________", "jodylorist_nl_jodylorist");
  
 // Check connection
 if($mysqli === false){
